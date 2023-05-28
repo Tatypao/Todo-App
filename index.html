@@ -10,73 +10,65 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <section class="header d-flex">
-          <button class="header--button">
-            <img class="header--button__img" src="assets/img/menu-hamburguer.png" alt="menu-hamburguesa">
-          </button>
-          <h1 class="header--h1">Task Lists</h1>
-          <nav class="header--nav nav">
-            <ul class="nav--ul">
-              <li class="nav--li"><a href="" class="nav--a">Item 1</a></li>
-              <li class="nav--li"><a href="" class="nav--a">Item 2</a></li>
-              <li class="nav--li"><a href="" class="nav--a">Item 3</a></li>
-              <li class="nav--li"><a href="" class="nav--a">Item 4</a></li>
-              <li class="nav--li"><a href="" class="nav--a">Item 5</a></li>
-            </ul>
-          </nav>
-        </section>
+    <div>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Task Lists
+            </a>
+          </div>
+        </nav>
         <section class="body container-fluid">
-          <div class="checkbox d-flex">
-            <label class="checkbox--label  d-flex" for="checkbox">
-              <input class="checkbox--input" type="checkbox" id="first-check">
-            </label>
-            <div class="checkbox--tex">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <div>
                 <h3>First checkbox</h3>
-                <small>With support text underneath to more detail</small>
-            </div>
-            <div class="checkbox--pencil">
-              <img src="" alt="logo-pencil">
-            </div>
-          </div>
-          <div class="checkbox d-flex">
-            <label class="checkbox--label  d-flex" for="checkbox">
-              <input class="checkbox--input" type="checkbox" id="first-check">
-            </label>
-            <div class="checkbox--tex">
+                <p>With support text underneath to add more detail</p>
+              </div>
+              <a href="">
+                <i class="bi bi-pencil-fill"></i>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <div>
                 <h3>Second checkbox</h3>
-                <small>With support text underneath to more detail</small>
-            </div>
-            <div class="checkbox--pencil">
-              <img src="" alt="logo-pencil">
-            </div>
-          </div>
-          <div class="checkbox d-flex">
-            <label class="checkbox--label  d-flex" for="checkbox">
-              <input class="checkbox--input" type="checkbox" id="first-check">
-            </label>
-            <div class="checkbox--tex">
+                <p>Some other text goes here</p>
+              </div>
+              <a href="">
+                <i class="bi bi-pencil-fill"></i>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <div>
                 <h3>Third checkbox</h3>
-                <small>With support text underneath to more detail</small>
-            </div>
-            <div class="checkbox--pencil">
-              <img src="" alt="logo-pencil">
-            </div>
-          </div>
+                <p>And we end with another snippet of text</p>
+              </div>
+              <a href="">
+                <i class="bi bi-pencil-fill"></i>
+              </a>
+            </li>
+           
+          </ul>
         </section>
         <section class="footer">
-         <button class="footer--btn footer--btn__danger">
-          <i></i>
-         </button>
-         <buttom class="footer--btn footer--btn__true">
-          <i></i>
-         </buttom>
-         <button class="footer--btn footer--btn__false">
-          <i></i>
-         </button>
-         <button>
-          <span>Add Task</span>
-         </button>
+          <div>
+            <button type="button" class="btn btn-danger">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              <i class="bi bi-check2"></i>
+            </button>
+            <button type="button" class="btn btn-outline-danger">
+              <i class="bi bi-x"></i>
+            </button>
+            <button class="btn btn-primary" type="submit">
+              <span>Add Task</span>
+            </button>
+          </div>
         </section>
     </div>
     
