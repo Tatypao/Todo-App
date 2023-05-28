@@ -4,7 +4,9 @@
   "description": "TODO App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "dev":"live-server",
+   "compile-sass":"sass --watch assets/sass/style.scss assets/css/style.css"
+   
   },
   "author": "",
   "license": "ISC"
