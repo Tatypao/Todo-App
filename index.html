@@ -13,39 +13,45 @@
     <div>
         <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              Task Lists
+            <a class="navbar-brand d-flex" href="#">
+              <i class="bi bi-list-ul"></i>
+              <h1>Task Lists</h1>
             </a>
           </div>
         </nav>
         <section class="body container-fluid">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-              <div>
-                <h3>First checkbox</h3>
-                <p>With support text underneath to add more detail</p>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                <div>
+                  <h3>First checkbox</h3>
+                  <p>With support text underneath to add more detall</p>
+                </div>
               </div>
               <a href="">
                 <i class="bi bi-pencil-fill"></i>
               </a>
             </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-              <div>
-                <h3>Second checkbox</h3>
-                <p>Some other text goes here</p>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                <div>
+                  <h3>Second checkbox</h3>
+                  <p>Some other text goes here</p>
+                </div>
               </div>
               <a href="">
                 <i class="bi bi-pencil-fill"></i>
               </a>
             </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-              <div>
-                <h3>Third checkbox</h3>
-                <p>And we end with another snippet of text</p>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="d-flex">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                <div>
+                  <h3>Third checkbox</h3>
+                  <p>And we end with another snippet of text</p>
+                </div>
               </div>
               <a href="">
                 <i class="bi bi-pencil-fill"></i>
@@ -54,17 +60,19 @@
            
           </ul>
         </section>
-        <section class="footer">
-          <div>
+        <section class="container-fluid footer">
+          <div class="d-flex justify-content-between">
             <button type="button" class="btn btn-danger">
               <i class="bi bi-trash-fill"></i>
             </button>
-            <button type="button" class="btn btn-outline-success">
-              <i class="bi bi-check2"></i>
-            </button>
-            <button type="button" class="btn btn-outline-danger">
-              <i class="bi bi-x"></i>
-            </button>
+            <div>
+              <button type="button" class="btn btn-outline-success">
+                <i class="bi bi-check2"></i>
+              </button>
+              <button type="button" class="btn btn-outline-danger">
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
             <button class="btn btn-primary" type="submit">
               <span>Add Task</span>
             </button>
