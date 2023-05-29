@@ -7,4 +7,12 @@
   height: 50px;
 }
 
+.list--description p {
+  color: grey;
+}
+
+.a--pencil i {
+  color: grey;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+@use'../other/variables' as v;
+
+.list--description p{
+    color: v.$list--description__p-color;
+}
+.a--pencil i{
+    color: v.$pencil--svg__color;
+}
