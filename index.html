@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="main">
+    <div class="main d-flex flex-column justify-content-between border">
         <nav class="navbar border-bottom border-2">
           <div class="container-fluid justify-content-start align-items-center">
               <i class="bi bi-list-ul navbar--i"></i>
               <h4 class="navbar--h4">Task Lists</h4>
           </div>
         </nav>
-        <section class="body container-fluid">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item body--list d-flex justify-content-between">
+        <section class="body">
+          <ul class="body--ul list-group list-group-flush">
+            <li class="list-group-item body--list d-flex justify-content-between px-3">
               <div class="position-relative" >
                 <input class="form-check-input me-1  position-absolute" type="checkbox" value="" id="firstCheckbox">
                 <div class="list--description">
@@ -31,7 +31,7 @@
                 <i class="bi bi-pencil-fill"></i>
               </a>
             </li>
-            <li class="list-group-item body--list d-flex justify-content-between disabled">
+            <li class="list-group-item body--list d-flex justify-content-between px-3 disabled">
               <div class="position-relative " >
                 <input class="form-check-input me-1  position-absolute" type="checkbox" value="" id="firstCheckbox">
                 <div class="list--description">
@@ -43,7 +43,7 @@
                 <i class="bi bi-pencil-fill"></i>
               </a>
             </li>
-            <li class="list-group-item body--list d-flex justify-content-between border-bottom disabled">
+            <li class="list-group-item body--list d-flex justify-content-between px-3 border-bottom disabled">
               <div class="position-relative" >
                 <input class="form-check-input me-1  position-absolute" type="checkbox" value="" id="firstCheckbox">
                 <div class="list--description">
@@ -55,10 +55,9 @@
                 <i class="bi bi-pencil-fill"></i>
               </a>
             </li>
-           
           </ul>
         </section>
-        <section class="footer container-fluid border-top position-absolute">
+        <section class="footer container-fluid border-top">
           <div class="d-flex justify-content-between">
             <button type="button" class="btn footer--btn__select btn-danger">
               <i class="bi d-flex justify-content-center bi-trash-fill"></i>

@@ -4,12 +4,26 @@
   padding-top: 12px;
 }
 
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .navbar {
   height: 50px;
 }
 
+.body {
+  flex-grow: 2;
+}
+
 .body--list {
   padding: 7px 0;
+}
+
+.body--ul {
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .list--description {
@@ -58,6 +72,10 @@
 
 .disabled {
   opacity: 0.8;
+}
+
+.main {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
