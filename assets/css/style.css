@@ -45,4 +45,14 @@
   font-size: 0.8rem;
 }
 
+.navbar--i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar--h4 {
+  margin-left: 13px;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
