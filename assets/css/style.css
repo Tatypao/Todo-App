@@ -56,4 +56,8 @@
   margin-bottom: 0;
 }
 
+.disabled {
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=style.css.map */
