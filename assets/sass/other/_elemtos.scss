@@ -7,11 +7,12 @@
 }
 .list--description h6{
     margin: 0;
-    font-size: 0.8rem;
+    font-size: v.$font-size-primary;
 }
 .form-check-input{
     top: 10%;
 }
 .a--pencil i{
     color: v.$pencil--svg__color;
+    font-size: v.$font-size-primary;
 }
