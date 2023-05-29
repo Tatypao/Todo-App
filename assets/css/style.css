@@ -7,8 +7,27 @@
   height: 50px;
 }
 
+.body--list {
+  padding: 7px 0;
+}
+
+.list--description {
+  margin-left: 30px;
+}
+
 .list--description p {
   color: grey;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.list--description h6 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.form-check-input {
+  top: 10%;
 }
 
 .a--pencil i {

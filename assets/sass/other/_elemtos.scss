@@ -2,6 +2,15 @@
 
 .list--description p{
     color: v.$list--description__p-color;
+    font-size: v.$list--description__p-size;
+    margin: 0;
+}
+.list--description h6{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.form-check-input{
+    top: 10%;
 }
 .a--pencil i{
     color: v.$pencil--svg__color;
