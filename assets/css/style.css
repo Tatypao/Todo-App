@@ -1,81 +1,19 @@
-.footer {
-  height: 60px;
-  bottom: 0px;
-  padding-top: 12px;
-}
+/* Error: Expected expression.
+ *   ,
+ * 5 | $font-weight:
+ *   |              ^
+ *   '
+ *   assets\sass\other\_variables.scss 5:14  @use
+ *   assets\sass\modules\_modules.scss 1:1   @forward
+ *   assets\sass\style.scss 1:1              root stylesheet */
 
-.main {
-  max-width: 800px;
-  margin: 0 auto;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a   \2577 \a 5 \2502  $font-weight:\a   \2502               ^\a   \2575 \a   assets\\sass\\other\\_variables.scss 5:14  @use\a   assets\\sass\\modules\\_modules.scss 1:1   @forward\a   assets\\sass\\style.scss 1:1              root stylesheet";
 }
-
-.navbar {
-  height: 50px;
-}
-
-.body {
-  flex-grow: 2;
-}
-
-.body--list {
-  padding: 7px 0;
-}
-
-.body--ul {
-  max-height: 100vh;
-  overflow-y: auto;
-}
-
-.list--description {
-  margin-left: 30px;
-}
-
-.footer--btn__select {
-  width: 30px;
-  height: 35px;
-}
-
-.footer--btn__add {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.list--description p {
-  color: grey;
-  font-size: 0.7rem;
-  margin: 0;
-}
-
-.list--description h6 {
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-.form-check-input {
-  top: 10%;
-}
-
-.a--pencil i {
-  color: grey;
-  font-size: 0.8rem;
-}
-
-.navbar--i {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.navbar--h4 {
-  margin-left: 13px;
-  margin-bottom: 0;
-}
-
-.disabled {
-  opacity: 0.8;
-}
-
-.main {
-  height: 100vh;
-}
-
-/*# sourceMappingURL=style.css.map */
