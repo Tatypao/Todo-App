@@ -21,11 +21,11 @@
             <form id="form" action="">
               <div class="my-3 px-3">
                 <label for="exampleFormControlInput1" class="form-label">Todo Title</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
               </div>
               <div class="mb-3 px-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" rows="18" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name="description" class="form-control" rows="18" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
             </form>
           </section>
@@ -37,7 +37,7 @@
               </div>
               <div>
                 <a class="btn footer--btn__add btn-light text-primary" href="index.html">Cancel</a>
-                <button class="btn btn-primary" type="submit">Save</button>
+                <button  id="save" class="btn btn-primary" type="button">Save</button>
               </div>
             </div>
           </section>
