@@ -21,10 +21,13 @@
       document.addEventListener("DOMContentLoaded",()=>{
         const list= document.getElementById("container_task");
 
-        
+        const tareasLocales = localStorage.getItem('TAREAS');
+        let listadoDeTareas= [];
+        if(tareasLocales !== null){
+          listadoDeTareas = JSON.parse(tareasLocales);
+        }
 
 
-        const listadoDeTareas= [];
         
         
         for( let i=0; i<listadoDeTareas.length; i++){
@@ -52,16 +55,23 @@
           divDes.appendChild(h6);
           
           const p = document.createElement('p');
-          p.textContent = task.subtitulo;
+          p.textContent = task.descripcion;
           divDes.appendChild(p);
           div.appendChild(divDes);
           
           const a = document.createElement('a');
           a.classList.add('a--pencil','align-self-center');
+
           a.addEventListener('click',() => {
-            console.log(task.id);
             const elementoActual= document.getElementById('tarea_'+task.id);
             elementoActual.parentNode.removeChild(elementoActual);
+
+            const tareasLocales = localStorage.getItem('TAREAS');
+            if(tareasLocales !== null){
+              let listadoDeTareas = JSON.parse(tareasLocales);
+              listadoDeTareas = listadoDeTareas.filter((tarea)=> tarea.id !== task.id);
+              localStorage.setItem('TAREAS', JSON.stringify(listadoDeTareas));
+            }
           });
 
           const icon = document.createElement('i');
