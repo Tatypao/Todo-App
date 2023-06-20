@@ -26,8 +26,6 @@
         if(tareasLocales !== null){
           listadoDeTareas = JSON.parse(tareasLocales);
         }
-
-
         
         
         for( let i=0; i<listadoDeTareas.length; i++){
